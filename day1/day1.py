@@ -16,6 +16,7 @@ def findSolutionP2():
     for line in lines:
         numbers = []
 
+        print(line)
         for index, num in enumerate(nums):
             wheres = find_all(line, num)
             if wheres != []:
@@ -23,6 +24,9 @@ def findSolutionP2():
                     line = list(line)
                     line[where + 1] = str(index + 1)
                     line = ''.join(line)
+        print(line + " \n")
+
+        # 53594 -> 53592
 
         for char in line:
             if char.isdigit():
