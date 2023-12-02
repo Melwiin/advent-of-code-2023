@@ -62,5 +62,6 @@ def findSolution():
     result = sum(calibrationValues)
     return result
 
+
 print("P1: ", findSolution())
 print("P2: ", findSolutionP2())
